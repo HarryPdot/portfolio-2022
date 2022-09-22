@@ -4,7 +4,9 @@ specifiers:
   '@types/node': 18.7.18
   '@types/react': 18.0.20
   '@types/react-dom': 18.0.6
+  '@vanilla-extract/css': ^1.9.1
   '@vanilla-extract/next-plugin': ^2.1.0
+  clsx: ^1.2.1
   eslint: 8.23.1
   eslint-config-next: 12.3.1
   next: 12.3.1
@@ -13,7 +15,9 @@ specifiers:
   typescript: 4.8.3
 
 dependencies:
+  '@vanilla-extract/css': 1.9.1
   '@vanilla-extract/next-plugin': 2.1.0_next@12.3.1+webpack@5.74.0
+  clsx: 1.2.1
   next: 12.3.1_ir3quccc6i62x6qn6jjhyjjiey
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -997,6 +1001,11 @@ packages:
   /chrome-trace-event/1.0.3:
     resolution: {integrity: sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==}
     engines: {node: '>=6.0'}
+    dev: false
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
     dev: false
 
   /color-convert/1.9.3:
