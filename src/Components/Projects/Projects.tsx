@@ -24,4 +24,4 @@ return (
 )
 }
 
-export default Projects
+export { Projects }

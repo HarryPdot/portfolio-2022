@@ -1,4 +1,12 @@
-import { style } from '@vanilla-extract/css'
+import { fontFace, style } from '@vanilla-extract/css'
+
+const testFont = fontFace({
+    src: `url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');`
+})
+
+export const rozhaOne = style({
+    fontFamily: testFont
+})
 
 export const titleHeading = style({
     margin: '0',
@@ -6,7 +14,7 @@ export const titleHeading = style({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'start',
+    alignItems: 'flex-start',
     gridColumnStart: '2',
     gridColumnEnd: '5',
     gridRowStart: '3',
