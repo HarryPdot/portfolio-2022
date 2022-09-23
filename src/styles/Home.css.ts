@@ -1,8 +1,6 @@
-import { fontFace, style } from '@vanilla-extract/css'
+import { style } from '@vanilla-extract/css'
+import { testFont } from '../assets/fonts/fonts.css'
 
-const testFont = fontFace({
-    src: `url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');`
-})
 
 export const rozhaOne = style({
     fontFamily: testFont

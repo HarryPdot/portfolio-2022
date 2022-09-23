@@ -1,19 +1,19 @@
 
 import { appContainer, test, container, gap } from '../src/styles/app.css'
 import clsx from 'clsx';
-import { Button, Home, Projects, Contact, About } from '../src/Components'
+import { Button, Home, Projects, Contact, About, Gap } from '../src/Components'
 
 
 const App: any = () => {
   return (
     <div className={clsx(appContainer, container)}>
-      <Button></Button>
+      <Button>Button</Button>
       <Home/>
-      <div className={clsx(gap, test)}></div>
+      <Gap/>
       <About/>
-      <div className={clsx(gap, test)}></div>
+      <Gap/>
       <Projects/>
-      <div className={clsx(gap, test)}></div>
+      <Gap/>
       <Contact/>
     </div>
   )
