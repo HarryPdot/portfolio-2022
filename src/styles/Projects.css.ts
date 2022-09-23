@@ -6,10 +6,6 @@ export const placeholderImage = style({
     border: '1px solid green'
 })
 
-export const projectHeight = style({
-    // height:'100%'
-})
-
 export const projectName = style({
 
 })

@@ -5,10 +5,11 @@ export const test = style({
 })
 
 export const container = style({
-    margin: '0px',
+    margin: '0 auto 0 auto',
     width: '100vw',
     overflowX: 'hidden',
-    backgroundColor: 'rgb(19, 22, 30)'
+    backgroundColor: 'rgb(19, 22, 30)',
+
 });
 
 export const gridLayout = style({

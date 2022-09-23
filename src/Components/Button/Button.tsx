@@ -9,9 +9,13 @@ interface ButtonProps {
 }
 
 const Button = (props: ButtonProps) => {
-    console.log(props)
     const { children, id, className } = props
-    return <div id={id} className={clsx(button, className)}>{children}</div>
+    const windowScroll = () => {
+        console.log(props)
+    }
+    return (
+        <button id={id} className={clsx(button, className)} onClick={windowScroll}>{children}</button>
+    )
 }
 
 export { Button }
