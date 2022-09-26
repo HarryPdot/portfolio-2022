@@ -6,4 +6,14 @@ const placeHolderImage = style({
   border: '1px solid green',
 });
 
-export { placeHolderImage };
+const aboutImage = style({
+  gridColumnStart: '1',
+  gridColumnEnd: '5',
+});
+
+const aboutParagraph = style({
+  gridColumnStart: '6',
+  gridColumnEnd: '10',
+});
+
+export { placeHolderImage, aboutImage, aboutParagraph };

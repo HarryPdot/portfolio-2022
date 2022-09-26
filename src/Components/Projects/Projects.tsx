@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { placeHolderImage } from '../../styles/style';
+import { placeHolderImage } from '../../styles';
 import { Paragraph, Container } from '../../Components';
 
 const Projects: any = () => {

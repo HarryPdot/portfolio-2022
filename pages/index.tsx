@@ -1,4 +1,4 @@
-import { mainContainer } from '../src/styles/style';
+import { mainContainer } from '../src/styles';
 import { Home, Projects, Contact, About, Gap } from '../src/Components';
 
 const App: any = () => {

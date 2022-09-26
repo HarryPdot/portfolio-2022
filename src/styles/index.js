@@ -1,4 +1,4 @@
-import { placeHolderImage } from './About.css';
+import { placeHolderImage, aboutImage, aboutParagraph } from './About.css';
 import { gridLayout, mainContainer } from './app.css';
 import { contactMessage } from './Contact.css';
 import { titleHeading, margin0, homeHeight } from './Home.css';
@@ -11,4 +11,6 @@ export {
   margin0,
   homeHeight,
   mainContainer,
+  aboutImage,
+  aboutParagraph,
 };

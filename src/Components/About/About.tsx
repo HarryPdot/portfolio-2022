@@ -1,5 +1,6 @@
-import { placeHolderImage } from '../../styles/style';
+import { placeHolderImage, aboutImage, aboutParagraph } from '../../styles';
 import { Paragraph, Container } from '../../Components';
+import clsx from 'clsx';
 
 const About: any = () => {
   let placeholder =
@@ -7,12 +8,11 @@ const About: any = () => {
 
   return (
     <Container>
-      <div>
-        <h1>About Me</h1>
-        <div className={placeHolderImage}></div>
+      <section className={clsx(placeHolderImage, aboutImage)}></section>
+      <article className={aboutParagraph}>
         <Paragraph>{placeholder}</Paragraph>
         <Paragraph>{placeholder}</Paragraph>
-      </div>
+      </article>
     </Container>
   );
 };

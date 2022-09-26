@@ -1,9 +1,4 @@
-import {
-  gridLayout,
-  titleHeading,
-  margin0,
-  homeHeight,
-} from '../../styles/style';
+import { gridLayout, titleHeading, margin0, homeHeight } from '../../styles';
 import { rhozaOne } from '../../Components';
 import clsx from 'clsx';
 import { NextPage } from 'next';

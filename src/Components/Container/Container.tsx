@@ -11,9 +11,9 @@ interface ContainerProps {
 const Container = (props: ContainerProps) => {
   const { id, children, className } = props;
   return (
-    <div id={id} className={clsx(container, className)}>
+    <section id={id} className={clsx(container, className)}>
       {children}
-    </div>
+    </section>
   );
 };
 

@@ -1,4 +1,4 @@
-import { contactMessage } from '../../styles/style';
+import { contactMessage } from '../../styles';
 import { Container } from '../../Components';
 
 const Contact: any = () => {
