@@ -1,5 +1,4 @@
 import { style } from '@vanilla-extract/css';
-import { firaCode, rhozaOne } from '../../assets/fonts/fonts.css';
 
 export const button = style({
   border: '2px solid #26cfca',

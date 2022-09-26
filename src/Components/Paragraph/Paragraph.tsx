@@ -1,5 +1,5 @@
 import { ParagraphStyle } from './Paragraph.css';
-import { Children, ReactNode } from 'react';
+import { ReactNode } from 'react';
 import clsx from 'clsx';
 
 interface ParagraphProps {

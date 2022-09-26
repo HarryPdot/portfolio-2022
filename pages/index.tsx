@@ -1,10 +1,9 @@
-import { appContainer, test, container, gap } from '../src/styles/app.css';
-import clsx from 'clsx';
-import { Button, Home, Projects, Contact, About, Gap } from '../src/Components';
-import { NavBar } from '../src/Components/NavBar/NavBar';
+import { Container, width100 } from '../src/Components';
+import { Home, Projects, Contact, About, Gap } from '../src/Components';
+
 const App: any = () => {
   return (
-    <div className={clsx(appContainer, container)}>
+    <Container className={width100}>
       <Home />
       <Gap />
       <About />
@@ -12,7 +11,7 @@ const App: any = () => {
       <Projects />
       <Gap />
       <Contact />
-    </div>
+    </Container>
   );
 };
 

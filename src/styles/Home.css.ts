@@ -1,10 +1,6 @@
 import { style } from '@vanilla-extract/css';
 
-export const rozhaOne = style({
-  fontFamily: `'Rozha One', serif;`,
-});
-
-export const titleHeading = style({
+const titleHeading = style({
   margin: '0',
   width: '100%',
   display: 'flex',
@@ -19,10 +15,12 @@ export const titleHeading = style({
   fontSize: 20,
 });
 
-export const homeHeight = style({
+const homeHeight = style({
   height: '100vh',
 });
 
-export const margin0 = style({
+const margin0 = style({
   margin: 0,
 });
+
+export { titleHeading, homeHeight, margin0 };

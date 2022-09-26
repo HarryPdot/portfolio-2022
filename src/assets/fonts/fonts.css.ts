@@ -1,9 +1,11 @@
-import { fontFace } from '@vanilla-extract/css';
+import { style } from '@vanilla-extract/css';
 
-export const rhozaOne = fontFace({
-  src: `'Rozha One', serif;`,
+const rhozaOne = style({
+  fontFamily: `'Rozha One', serif;`,
 });
 
-export const firaCode = fontFace({
-  src: `'Fira Code', monospace;`,
+const firaCode = style({
+  fontFamily: `'Fira Code', monospace;`,
 });
+
+export { rhozaOne, firaCode };

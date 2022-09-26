@@ -7,6 +7,17 @@ import { Gap } from './Gap/Gap';
 import { rhozaOne, firaCode } from '../assets/fonts/fonts.css';
 import { Paragraph } from './Paragraph/Paragraph';
 import { Container } from './Container/Container';
+import { width100 } from './Container/Container.css';
 
-export { Home, Projects, About, Button, Contact, Gap, Paragraph, Container };
+export {
+  Home,
+  Projects,
+  About,
+  Button,
+  Contact,
+  Gap,
+  Paragraph,
+  Container,
+  width100,
+};
 export { rhozaOne, firaCode };
