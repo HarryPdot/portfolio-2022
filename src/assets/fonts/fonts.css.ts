@@ -1,9 +1,9 @@
 import { fontFace } from '@vanilla-extract/css';
 
 export const rhozaOne = fontFace({
-  src: 'local("./RhozaOne/RozhaOne.tff")',
+  src: `'Rozha One', serif;`,
 });
 
 export const firaCode = fontFace({
-  src: ``,
+  src: `'Fira Code', monospace;`,
 });

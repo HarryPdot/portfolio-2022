@@ -6,15 +6,13 @@ interface ButtonProps {
   id?: string;
   children: ReactNode;
   className?: string;
+  onClick: () => {};
 }
 
 const Button = (props: ButtonProps) => {
-  const { children, id, className } = props;
-  const windowScroll = () => {
-    console.log(props);
-  };
+  const { children, id, className, onClick } = props;
   return (
-    <button id={id} className={clsx(button, className)} onClick={windowScroll}>
+    <button onClick={onClick} id={id} className={clsx(button, className)}>
       {children}
     </button>
   );

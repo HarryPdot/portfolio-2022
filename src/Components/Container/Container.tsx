@@ -10,7 +10,6 @@ interface ContainerProps {
 
 const Container = (props: ContainerProps) => {
   const { id, children, className } = props;
-  console.log(props);
   return (
     <div id={id} className={clsx(container, className)}>
       {children}

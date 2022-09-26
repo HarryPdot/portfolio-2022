@@ -1,8 +1,7 @@
 import { style } from '@vanilla-extract/css';
-import { rhozaOne } from '../assets/fonts/fonts.css';
 
 export const rozhaOne = style({
-  fontFamily: `${rhozaOne}, serif;`,
+  fontFamily: `'Rozha One', serif;`,
 });
 
 export const titleHeading = style({
