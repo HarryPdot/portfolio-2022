@@ -1,9 +1,9 @@
-import { Container, width100 } from '../src/Components';
+import { mainContainer } from '../src/styles/style';
 import { Home, Projects, Contact, About, Gap } from '../src/Components';
 
 const App: any = () => {
   return (
-    <Container className={width100}>
+    <div className={mainContainer}>
       <Home />
       <Gap />
       <About />
@@ -11,7 +11,7 @@ const App: any = () => {
       <Projects />
       <Gap />
       <Contact />
-    </Container>
+    </div>
   );
 };
 

@@ -1,5 +1,5 @@
 import { placeHolderImage } from './About.css';
-import { gridLayout } from './app.css';
+import { gridLayout, mainContainer } from './app.css';
 import { contactMessage } from './Contact.css';
 import { titleHeading, margin0, homeHeight } from './Home.css';
 
@@ -10,4 +10,5 @@ export {
   titleHeading,
   margin0,
   homeHeight,
+  mainContainer,
 };

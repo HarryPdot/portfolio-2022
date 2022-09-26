@@ -8,4 +8,11 @@ const gridLayout = style({
   gridTemplateRows: 'repeat(6, 1fr)',
 });
 
-export { gridLayout };
+const mainContainer = style({
+  margin: '0 auto 0 auto',
+  width: '100vw',
+  overflowX: 'hidden',
+  backgroundColor: 'rgb(19, 22, 30)',
+});
+
+export { gridLayout, mainContainer };

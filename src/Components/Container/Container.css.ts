@@ -6,14 +6,8 @@ const container = style({
   overflowX: 'hidden',
   backgroundColor: 'rgb(19, 22, 30)',
   '@media': {
-    'screen and (min-width: 768px)': {
-      padding: 100,
-    },
+    'screen and (min-width: 768px)': {},
   },
 });
 
-const width100 = style({
-  width: '100vw',
-});
-
-export { container, width100 };
+export { container };
