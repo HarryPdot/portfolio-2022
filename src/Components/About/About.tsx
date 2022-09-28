@@ -1,8 +1,9 @@
-import { placeHolderImage, aboutImage, aboutParagraph } from '../../styles';
+import { aboutImage, aboutParagraph, pictureContainer } from '../../styles';
 import { Paragraph, Container } from '../../Components';
 import { useState, useEffect, ReactNode } from 'react';
 import axios from 'axios';
 import clsx from 'clsx';
+import Image from 'next/image';
 
 const About: any = () => {
   let placeholder =
@@ -23,18 +24,25 @@ const About: any = () => {
       .then((res: any) => {
         setAbout({
           description: res.data.data.attributes.description,
-          image: 'yes',
+          image:
+            res.data.data.attributes.images.data[0].attributes.formats.medium
+              .url,
         });
       });
   }, []);
 
   return (
     <Container>
-      <section className={clsx(placeHolderImage, aboutImage)}></section>
+      <picture className={pictureContainer}>
+        <img
+          className={aboutImage}
+          src={`https://obscure-river-81403.herokuapp.com${about.image}`}
+          alt="Landscape picture"
+        />
+      </picture>
       <article className={aboutParagraph}>
         <Paragraph>{about.description}</Paragraph>
-        <Paragraph>{about.image}</Paragraph>
-        {/* <img src={`${data}`} alt="" /> */}
+        <Paragraph>{placeholder}</Paragraph>
       </article>
     </Container>
   );

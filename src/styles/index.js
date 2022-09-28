@@ -1,10 +1,10 @@
-import { placeHolderImage, aboutImage, aboutParagraph } from './About.css';
+import { aboutImage, aboutParagraph, pictureContainer } from './About.css';
 import { gridLayout, mainContainer } from './app.css';
 import { contactMessage } from './Contact.css';
 import { titleHeading, margin0, homeHeight } from './Home.css';
 
 export {
-  placeHolderImage,
+  pictureContainer,
   gridLayout,
   contactMessage,
   titleHeading,
