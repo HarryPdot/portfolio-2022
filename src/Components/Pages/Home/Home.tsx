@@ -1,5 +1,5 @@
-import { gridLayout, titleHeading, homeHeight } from '../../styles';
-import { nameColor, role1, role2, HomeHeading } from '../../Components';
+import { gridLayout, titleHeading, homeHeight } from '../../../styles';
+import { nameColor, role1, role2, HomeHeading } from '../..';
 import clsx from 'clsx';
 import { NextPage } from 'next';
 

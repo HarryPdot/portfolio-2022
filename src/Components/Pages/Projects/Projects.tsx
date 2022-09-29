@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { Paragraph, Container } from '../../Components';
+import { Paragraph, Container } from '../..';
 
 const Projects: any = () => {
   let placeholder =

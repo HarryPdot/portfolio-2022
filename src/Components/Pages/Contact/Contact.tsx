@@ -1,5 +1,5 @@
-import { contactMessage } from '../../styles';
-import { Container } from '../../Components';
+import { contactMessage } from '../../../styles';
+import { Container } from '../..';
 
 const Contact: any = () => {
   return (

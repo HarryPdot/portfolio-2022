@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import { rhozaOne } from '../../Components';
-import { margin0 } from '../../styles';
+import { rhozaOne } from '../..';
+import { margin0 } from '../../../styles';
 import clsx from 'clsx';
 
 interface homeProps {

@@ -1,5 +1,5 @@
-import { aboutImage, aboutParagraph, pictureContainer } from '../../styles';
-import { Paragraph, Container } from '../../Components';
+import { aboutImage, aboutParagraph, pictureContainer } from '../../../styles';
+import { Paragraph, Container } from '../..';
 import { useState, useEffect, ReactNode } from 'react';
 import axios from 'axios';
 
