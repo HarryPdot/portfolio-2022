@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import { placeHolderImage } from '../../styles';
 import { Paragraph, Container } from '../../Components';
 
 const Projects: any = () => {
@@ -11,7 +10,7 @@ const Projects: any = () => {
       <div>
         {/* project name link to the project */}
         <h2>Project Name</h2>
-        <div className={clsx(placeHolderImage)}></div>
+        <div className={''}></div>
         <Paragraph>{placeholder}</Paragraph>
       </div>
     </Container>
