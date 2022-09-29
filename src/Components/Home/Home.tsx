@@ -1,5 +1,5 @@
-import { gridLayout, titleHeading, margin0, homeHeight } from '../../styles';
-import { rhozaOne } from '../../Components';
+import { gridLayout, titleHeading, homeHeight } from '../../styles';
+import { nameColor, role1, role2, HomeHeading } from '../../Components';
 import clsx from 'clsx';
 import { NextPage } from 'next';
 
@@ -8,8 +8,9 @@ const Home: NextPage = (): JSX.Element => {
     <div className={clsx(homeHeight)}>
       <div className={gridLayout}>
         <section className={titleHeading}>
-          <h1 className={clsx(margin0, rhozaOne)}>Harry Pham,</h1>
-          <h1 className={clsx(margin0, rhozaOne)}>Full Stack Engineer</h1>
+          <HomeHeading className={nameColor}>Harry Pham, </HomeHeading>
+          <HomeHeading className={role1}>Full Stack </HomeHeading>
+          <HomeHeading className={role2}>Engineer </HomeHeading>
         </section>
       </div>
     </div>
