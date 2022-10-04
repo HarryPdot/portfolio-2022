@@ -1,11 +1,5 @@
 import { style } from '@vanilla-extract/css';
 
-const placeHolderImage = style({
-  height: '300px',
-  width: '100%',
-  border: '1px solid green',
-});
-
 const aboutImage = style({
   width: '100%',
   '@media': {
@@ -40,4 +34,4 @@ const aboutParagraph = style({
   },
 });
 
-export { placeHolderImage, aboutImage, aboutParagraph, pictureContainer };
+export { aboutImage, aboutParagraph, pictureContainer };
