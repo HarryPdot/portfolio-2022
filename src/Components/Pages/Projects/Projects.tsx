@@ -13,11 +13,21 @@ import {
 import { useContentful } from '../../../assets/Contenful/Contenful';
 
 const Projects: any = () => {
+  interface projectProp {
+    name: string;
+    description: string;
+    image: string;
+    skills: string;
+    githubUrl: string;
+    projectUrl: string;
+  }
+
   const { getProjectContent } = useContentful();
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<any>([]);
+
   useEffect(() => {
     getProjectContent().then((res) => {
-      let cleanUpProject = res?.map((item) => {
+      let cleanUpProject = res?.map((item: any) => {
         return {
           name: item.fields.name,
           description: item.fields.description,
@@ -31,11 +41,6 @@ const Projects: any = () => {
     });
   }, []);
 
-  interface projectProps {
-    any: any;
-  }
-  let placeholder =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
   return (
     <div className={projects100}>
       {projects.map((data: any, i: any) => {
