@@ -6,29 +6,28 @@ import {
   projectName,
   projectContainer,
   projects100,
+  projectImage,
+  projectImageGrid,
 } from '../../../styles';
+import { useContentful } from '../../../assets/Contenful/Contenful';
 
 const Projects: any = () => {
+  const { getProjectContent } = useContentful();
   const [projects, setProjects] = useState([]);
-
   useEffect(() => {
-    async function fetchProject(url: any) {
-      const response = await fetch(url, {
-        method: 'GET',
-        mode: 'cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+    getProjectContent().then((res) => {
+      let cleanUpProject = res?.map((item) => {
+        return {
+          name: item.fields.name,
+          description: item.fields.description,
+          image: 'https:' + item.fields.image.fields.file.url || null,
+          skills: item.fields.skills,
+          githubUrl: item.fields.githubUrl,
+          projectUrl: item.fields.projectUrl,
+        };
       });
-      return response.json();
-    }
-    fetchProject('https://obscure-river-81403.herokuapp.com/api/projects').then(
-      (res) => {
-        console.log(res.data);
-        setProjects(res.data);
-        console.log(projects);
-      }
-    );
+      setProjects(cleanUpProject);
+    });
   }, []);
 
   interface projectProps {
@@ -43,13 +42,18 @@ const Projects: any = () => {
           <Container key={i} className={projectContainer}>
             {/* project name link to the project */}
             <h2 className={projectName}>
-              <a href={data.attributes['github_url']} target="blank_">
-                {data.attributes['Name']}
+              <a href={data.projectUrl} target="blank_">
+                {data.name}
               </a>
             </h2>
-            <Paragraph className={description}>
-              {data.attributes.description}
-            </Paragraph>
+            <picture className={projectImageGrid}>
+              <img
+                className={projectImage}
+                src={data.image}
+                alt="Landscape picture"
+              />
+            </picture>
+            <Paragraph className={description}>{data.description}</Paragraph>
           </Container>
         );
       })}

@@ -7,6 +7,8 @@ import {
   projectName,
   projectContainer,
   projects100,
+  projectImage,
+  projectImageGrid,
 } from './Projects.css';
 
 export {
@@ -23,4 +25,6 @@ export {
   projectName,
   projectContainer,
   projects100,
+  projectImage,
+  projectImageGrid,
 };

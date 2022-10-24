@@ -25,15 +25,32 @@ const projectContainer = style({
     'screen and (min-width: 750px)': {
       display: 'grid',
       gridTemplateColumns: 'repeat(10,minmax(0,1fr))',
-      gridTemplateRows: 'repeat(2,(0,1fr))',
+      gridTemplateRows: 'repeat(2,minmax(0,1fr))',
       justifyContent: 'center',
       alignItems: 'center',
     },
   },
 });
 
+const projectImage = style({
+  maxWidth: '100%',
+});
+
+const projectImageGrid = style({
+  gridColumnStart: '1',
+  gridColumnEnd: '5',
+  gridRowStart: '2',
+});
+
 const projects100 = style({
   width: '100%',
 });
 
-export { description, projectName, projectContainer, projects100 };
+export {
+  description,
+  projectName,
+  projectContainer,
+  projects100,
+  projectImage,
+  projectImageGrid,
+};
