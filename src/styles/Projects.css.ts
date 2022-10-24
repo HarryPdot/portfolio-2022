@@ -25,6 +25,7 @@ const projectContainer = style({
       gridTemplateRows: 'repeat(2,(0,1fr))',
       justifyContent: 'center',
       alignItems: 'center',
+      columnGap: '1.5em',
     },
   },
 });
@@ -35,7 +36,7 @@ const projectImage = style({
 
 const leftSide = style({
   gridColumnStart: '1',
-  gridColumnEnd: '5',
+  gridColumnEnd: '6',
   gridRowStart: '2',
 });
 
