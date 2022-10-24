@@ -22,7 +22,7 @@ const projectContainer = style({
     'screen and (min-width: 750px)': {
       display: 'grid',
       gridTemplateColumns: 'repeat(10,minmax(0,1fr))',
-      gridTemplateRows: 'repeat(2,minmax(0,1fr))',
+      gridTemplateRows: 'repeat(2,(0,1fr))',
       justifyContent: 'center',
       alignItems: 'center',
     },
