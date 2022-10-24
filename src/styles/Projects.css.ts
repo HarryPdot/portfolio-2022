@@ -9,9 +9,6 @@ const projectName = style({
 });
 
 const description = style({
-  gridColumnStart: '6',
-  gridColumnEnd: '11',
-  gridRowStart: '2',
   '@media': {
     'screen and (min-width: 750px)': {
       fontSize: '18px',
@@ -36,9 +33,15 @@ const projectImage = style({
   maxWidth: '100%',
 });
 
-const projectImageGrid = style({
+const leftSide = style({
   gridColumnStart: '1',
   gridColumnEnd: '5',
+  gridRowStart: '2',
+});
+
+const rightSide = style({
+  gridColumnStart: '6',
+  gridColumnEnd: '11',
   gridRowStart: '2',
 });
 
@@ -52,5 +55,6 @@ export {
   projectContainer,
   projects100,
   projectImage,
-  projectImageGrid,
+  leftSide,
+  rightSide,
 };

@@ -7,7 +7,8 @@ import {
   projectContainer,
   projects100,
   projectImage,
-  projectImageGrid,
+  leftSide,
+  rightSide,
 } from '../../../styles';
 import { useContentful } from '../../../assets/Contenful/Contenful';
 
@@ -46,14 +47,22 @@ const Projects: any = () => {
                 {data.name}
               </a>
             </h2>
-            <picture className={projectImageGrid}>
+            <picture className={i % 2 === 0 ? leftSide : rightSide}>
               <img
                 className={projectImage}
                 src={data.image}
                 alt="Landscape picture"
               />
             </picture>
-            <Paragraph className={description}>{data.description}</Paragraph>
+            <Paragraph
+              className={
+                i % 2 === 0
+                  ? clsx(description, rightSide)
+                  : clsx(description, leftSide)
+              }
+            >
+              {data.description}
+            </Paragraph>
           </Container>
         );
       })}

@@ -8,7 +8,8 @@ import {
   projectContainer,
   projects100,
   projectImage,
-  projectImageGrid,
+  leftSide,
+  rightSide,
 } from './Projects.css';
 
 export {
@@ -26,5 +27,6 @@ export {
   projectContainer,
   projects100,
   projectImage,
-  projectImageGrid,
+  leftSide,
+  rightSide,
 };
