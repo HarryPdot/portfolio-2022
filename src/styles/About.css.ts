@@ -25,11 +25,11 @@ const aboutParagraph = style({
   '@media': {
     'screen and (min-width: 750px)': {
       gridColumnStart: '7',
-      gridColumnEnd: '11',
+      gridColumnEnd: '12',
     },
     'screen and (min-width: 1400px)': {
       gridColumnStart: '6',
-      gridColumnEnd: '10',
+      gridColumnEnd: '12',
     },
   },
 });

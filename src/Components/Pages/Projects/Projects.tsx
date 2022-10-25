@@ -45,33 +45,30 @@ const Projects: any = () => {
     <div className={projects100}>
       {projects.map((data: any, i: any) => {
         return (
-          <div key={i}>
-            <Container className={projectContainer}>
-              {/* project name link to the project */}
-              <h2 className={projectName}>
-                <a href={data.projectUrl} target="blank_">
-                  {data.name}
-                </a>
-              </h2>
-              <picture className={i % 2 === 0 ? leftSide : rightSide}>
-                <img
-                  className={projectImage}
-                  src={data.image}
-                  alt="Landscape picture"
-                />
-              </picture>
-              <Paragraph
-                className={
-                  i % 2 === 0
-                    ? clsx(description, rightSide)
-                    : clsx(description, leftSide)
-                }
-              >
-                {data.description}
-              </Paragraph>
-            </Container>
-            <Gap></Gap>
-          </div>
+          <Container key={i} className={projectContainer}>
+            {/* project name link to the project */}
+            <h2 className={projectName}>
+              <a href={data.projectUrl} target="blank_">
+                {data.name}
+              </a>
+            </h2>
+            <picture className={i % 2 === 0 ? leftSide : rightSide}>
+              <img
+                className={projectImage}
+                src={data.image}
+                alt="Landscape picture"
+              />
+            </picture>
+            <Paragraph
+              className={
+                i % 2 === 0
+                  ? clsx(description, rightSide)
+                  : clsx(description, leftSide)
+              }
+            >
+              {data.description}
+            </Paragraph>
+          </Container>
         );
       })}
     </div>

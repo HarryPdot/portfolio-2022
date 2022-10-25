@@ -10,7 +10,7 @@ const gridLayout = style({
 
 const mainContainer = style({
   margin: '0 auto 0 auto',
-  width: '100vw',
+  width: '98vw',
   overflowX: 'hidden',
   backgroundColor: 'rgb(19, 22, 30)',
 });

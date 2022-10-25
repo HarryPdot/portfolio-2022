@@ -2,7 +2,7 @@ import { style } from '@vanilla-extract/css';
 
 const projectName = style({
   gridColumnStart: '1',
-  gridColumnEnd: '3',
+  gridColumnEnd: '5',
   gridRowStart: '1',
   fontSize: 32,
   textDecoration: 'underline',
@@ -18,6 +18,7 @@ const description = style({
 
 const projectContainer = style({
   cursor: 'default',
+  padding: '80px 0 80px 0',
   '@media': {
     'screen and (min-width: 750px)': {
       display: 'grid',

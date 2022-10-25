@@ -15,6 +15,7 @@ import {
 import { Paragraph } from './Reusable/Paragraph/Paragraph';
 import { Container } from './Reusable/Container/Container';
 import { width100 } from './Reusable/Container/Container.css';
+import { NavBar } from './Features/NavBar/NavBar';
 
 export {
   Home,
@@ -27,5 +28,6 @@ export {
   Container,
   width100,
   HomeHeading,
+  NavBar,
 };
 export { rhozaOne, firaCode, nameColor, role1, role2 };
