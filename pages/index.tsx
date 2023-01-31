@@ -18,7 +18,7 @@ const App: any = () => {
           <Gap />
           <Projects />
           <Gap />
-          <Contact />
+          {/* <Contact /> */}
         </>
       )}
     </div>
