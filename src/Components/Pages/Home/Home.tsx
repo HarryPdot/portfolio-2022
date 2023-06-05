@@ -8,7 +8,7 @@ const Home: NextPage = (): JSX.Element => {
     <div className={clsx(homeHeight)}>
       <div className={gridLayout}>
         <section className={titleHeading}>
-          <HomeHeading className={nameColor}>Harry Pham, </HomeHeading>
+          <HomeHeading className={nameColor}>Harry Phams, </HomeHeading>
           <HomeHeading className={role1}>Full Stack </HomeHeading>
           <HomeHeading className={role2}>Engineer </HomeHeading>
         </section>
